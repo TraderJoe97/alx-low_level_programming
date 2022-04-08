@@ -4,7 +4,7 @@
 
 /**
  * main - creates a random number and prints wheather its positive or negative
- * Return : always zero
+ * Return: always zero (Success/correct)
  */
 
 int main(void)
@@ -13,13 +13,13 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-	if (n==0)
+
+	if (n == 0)
 	{
 		printf("%i is zero\n", n);
 	}
-	
-	else if (n<0)
+
+	else if (n < 0)
 	{
 		printf("%i is negative\n", n);
 	}
