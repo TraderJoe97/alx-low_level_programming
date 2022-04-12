@@ -8,15 +8,15 @@
 
 int main(void)
 {
-	long i = 0;
-	long j = 1;
+	unsigned long i = 0;
+	unsigned long j = 1;
 	int n = 0;
 	unsigned long fib;
 
-	while (n < 98)
+	while (n < 99)
 	{
 		fib = j + i;
-		if (n != 97)
+		if (n != 98)
 			printf("%lu, ", fib);
 		else
 			printf("%lu\n", fib);
