@@ -10,18 +10,18 @@ int main(void)
 {
 	long i = 0;
 	long j = 1;
-	int n = 0;
-	long fib;
-	long sum = 0;
+	long fib = 0;
+	long sum =0;
 
-	while (n < 4000000)
+	while (fib <= 4000000)
 	{
 		fib = j + i;
 		if ((fib % 2) == 0)
-			sum = sum+fib;
+		{
+			sum += fib;
+		}
 		i = j;
 		j = fib;
-		n += 1;
 	}
 	printf("%ld\n", sum);
 	return (0);
