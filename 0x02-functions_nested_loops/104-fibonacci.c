@@ -17,9 +17,9 @@ int main(void)
 	{
 		fib = j + i;
 		if (n != 97)
-			printf("%ld, ", fib);
+			printf("%lu, ", fib);
 		else
-			printf("%ld\n", fib);
+			printf("%lu\n", fib);
 		i = j;
 		j = fib;
 		n += 1;
