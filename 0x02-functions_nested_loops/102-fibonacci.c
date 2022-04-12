@@ -12,17 +12,17 @@ int main(void)
 	long j = 1;
 	int n = 0;
 	long fib;
-	long sum = 0;
 
-	while (n < 4000000)
+	while (n < 50)
 	{
 		fib = j + i;
-		if ((fib % 2) = 0)
-			sum = sum+fib;
+		if (n != 49)
+			printf("%ld, ", fib);
+		else
+			printf("%ld\n", fib);
 		i = j;
 		j = fib;
 		n += 1;
 	}
-	printf("%ld\n", sum);
 	return (0);
 }
