@@ -5,7 +5,7 @@
  * insert_nodeint_at_index - function that inserts a new node at given position
  * @head: head of the node
  * @index: index where to place node
- * @n: data for the node
+ * @n: data for  the node
  * Return: the address of new node
  */
 
