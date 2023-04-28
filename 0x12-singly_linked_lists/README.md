@@ -1,70 +1,56 @@
-# 0x12. C - More singly linked lists
+# C - Singly linked lists
 
-## Description
-What you should learn from this project:
+In this project, I practiced building and using singly linked lists
+in C while learning when and why to use linked lists versus arrays.
 
-* How to use linked lists
-* Start to look for the right source of information without too much help
+## Header File :file_folder:
 
----
+* [lists.h](./lists.h): Header file containing definitions and prototypes for all
+types and functions written for the project.
 
+| Type/File          | Definition/Prototype                                                                   |
+| ------------------ | -------------------------------------------------------------------------------------- |
+| `struct list_s`    | <ul><li>`char *str`</li><li>`unsigned int len`</li><li>`struct list_s *next`</li></ul> |
+| `typedef list_t`   | `struct list_s`                                                                        |
+| `0-print_list.c`   | `size_t print_list(const list_t *h);`                                                  |
+| `1-list_len.c`     | `size_t list_len(const list_t *h);`                                                    |
+| `2-add_node.c`     | `list_t *add_node(list_t **head, const char *str);`                                    |
+| `3-add_node_end.c` | `list_t *add_node_end(list_t **head, const char *str);`                                |
+| `4-free_list.c`    | `void free_list(list_t *head)`                                                         |
 
-### [0. Print list](./0-print_listint.c)
-* Write a function that prints all the elements of a listint_t list.
+## Tasks :page_with_curl:
 
+* **0. Print list**
+  * [0-print_list.c](./0-print_list.c): C function that prints all the
+  elements of a `list_t` list.
+    * If `str` is `NULL`, the function prints `[0] (nil)`.
 
-### [1. List length](./1-listint_len.c)
-* Write a function that returns the number of elements in a linked listint_t list.
+* **1. List length**
+  * [1-list_len.c](./1-list_len.c): C function that returns the number of elements
+  in a linked `list_t` list.
 
-
-### [2. Add node](./2-add_nodeint.c)
-* Write a function that adds a new node at the beginning of a listint_t list.
-
-
-### [3. Add node at the end](./3-add_nodeint_end.c)
-* Write a function that adds a new node at the end of a listint_t list.
-
-
-### [4. Free list](./4-free_listint.c)
-* Write a function that frees a listint_t list.
-
-
-### [5. Free](./5-free_listint2.c)
-* Write a function that frees a listint_t list.
-
-
-### [6. Pop](./6-pop_listint.c)
-* Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
-
-
-### [7. Get node at index](./7-get_nodeint.c)
-* Write a function that returns the nth node of a listint_t linked list.
+* **2. Add node**
+  * [2-add_node.c](./2-add_node.c): C function that adds a new node at the
+  beginning a of a `list_t` list.
+    * If the function fails - returns `NULL`.
+    * Otherwise - returns the address of the new element.
 
 
-### [8. Sum list](./8-sum_listint.c)
-* Write a function that returns the sum of all the data (n) of a listint_t linked list.
+* **3. Add node at the end**
+  * [3-add_node_end.c](./3-add_node_end.c): C function that adds a new node at
+  the end of a linked `list_t` list.
+    * If the function fails - returns `NULL`.
+    * Otherwise - returns the address of the new element.
 
+* **4. Free list**
+  * [4-free_list.c](./4-free_list.c): C function that frees a `list_t` list.
 
-### [9. Insert](./9-insert_nodeint.c)
-* Write a function that inserts a new node at a given position.
+* **5. The Hare and the Tortoise**
+  * [100-first.c](./100-first.c): C function that prints `You're beat! and
+  yet, you must allow,\nI bore my house upon my back!\n` before the `main`
+  function is executed.
 
-
-### [10. Delete at index](./10-delete_nodeint.c)
-* Write a function that deletes the node at index index of a listint_t linked list.
-
-
-### [11. Reverse list](./100-reverse_listint.c)
-* Write a function that reverses a listint_t linked list.
-
-
-### [12. Print (safe version)](./101-print_listint_safe.c)
-* Write a function that prints a listint_t linked list.
-
-
-### [13. Free (safe version)](./102-free_listint_safe.c)
-* Write a function that frees a listint_t list.
-
-
-### [14. Find the loop](./103-find_loop.c)
-* Write a function that finds the loop in a linked list.
-
+* **6. Real programmers can write assembly code in any language**
+  * [101-hello_holberton.asm](./101-hello_holberton.asm): 64-but assembly program
+  that prints `Hello, Holberton` followed by a new line using only the
+  `printf` function witout interrupts.
